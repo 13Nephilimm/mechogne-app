@@ -1,0 +1,116 @@
+.nav {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 9.6rem;
+  height: 8vh;
+  z-index: 999;
+  transition: all 0.5s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.solid {
+  transition: all 0.5s;
+  box-shadow: 0px 5px 8px 3px rgba(0, 0, 0, 0.3);
+  background-color: #222220;
+}
+
+.nav-brand {
+  width: 9.6rem;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 3.2rem;
+}
+
+.nav-toggler div {
+  width: 2.4rem;
+  height: 1px;
+  margin: 4px;
+  background-color: #fff;
+  transition: 0.4s ease-in;
+}
+
+.nav-toggler {
+  cursor: pointer;
+  display: none;
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #7d1423;
+}
+
+@media only screen and (max-width: 1176px) {
+  .nav-toggler {
+    display: block;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+    background-color: #1a1a19;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: 0.5s ease-in;
+    justify-content: center;
+    gap: 6.4rem;
+  }
+
+  .nav-brand {
+    width: 3.6rem;
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .nav {
+    padding: 0 1.6rem;
+  }
+
+  .nav-menu {
+    gap: 1.2rem;
+  }
+}
+
+/* Nav Active Class */
+.nav-active {
+  transform: translateX(0);
+}
+
+/* Toggler Icon Animation */
+.toggle .line-1 {
+  transform: rotate(-45deg) translate(-4px, 5px);
+}
+
+.toggle .line-2 {
+  opacity: 0;
+}
+
+.toggle .line-3 {
+  transform: rotate(45deg) translate(-1px, -5px);
+}
+
+.translate-btn {
+  border: none;
+  background-color: transparent;
+  font-size: 1.6rem;
+  color: #fff;
+  text-transform: uppercase;
+}

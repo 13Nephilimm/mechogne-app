@@ -1,0 +1,11 @@
+.coming-soon-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.coming-soon-heading {
+  text-align: center;
+  font-size: 6.4rem;
+}
