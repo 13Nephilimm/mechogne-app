@@ -5,6 +5,7 @@ import Card from "../../../components/Card/Card";
 
 const CardsSection = () => {
   const { t } = useTranslation();
+
   return (
     <section className="cards-section">
       <h1 className="cards-heading">{t("cardsHeading")}</h1>

@@ -1,0 +1,41 @@
+.who-are-we-section {
+  height: 100vh;
+  padding-top: 9.6rem;
+  background-image: linear-gradient(90deg, #222220, #7d1423);
+}
+
+.who-we-are-heading {
+  font-size: 6.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 6.4rem;
+  color: #fff;
+}
+
+.who-are-we-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-content: center;
+  justify-items: center;
+  gap: 9.6rem;
+  max-width: 140rem;
+  margin: 0 auto;
+  padding: 4.8rem;
+  margin-top: 3.6rem;
+}
+
+.wwa-text-box {
+  display: flex;
+  align-items: center;
+}
+
+.wwa-text {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 300;
+}
+
+.wwa-image {
+  width: 100%;
+}

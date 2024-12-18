@@ -2,7 +2,7 @@ footer {
   background-color: #222220;
   padding: 3rem 0;
   text-align: center;
-  margin-top: 7rem;
+  border-top: 3.5px solid #000;
 }
 
 footer a {
